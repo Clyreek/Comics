@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a, blockquote{
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(203, 203, 235);
+}
+
+blockquote{
+    width: 60%;
+    margin: 5% auto;
+    background-color: rgb(161, 161, 161);
+    border-radius: 50px;
+}
+
+h1{
+    text-align: left;
+    padding-left: 2%;
+    font-family: "Bungee";
+}
+
+nav{
+    font-size: 80%;
+    font-family: "Bungee";
+    padding-top: 5%;
+    display: grid;
+    align-items: center;
+    flex-direction: row;
+    grid-template-rows: 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    outline: solid white;
+}
+
+/* nav > p{
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+} */
+
+main{
+    padding-bottom: 7vh;
+}
+
+article{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    row-gap: 20%;
+    column-gap: 0;
+    padding-top: 5%;
+}
+
+nav, footer, h1{
+    background-image: linear-gradient(to right, rgba(19, 48, 212), rgb(85, 127, 218));
+    color: white;
+}
+
+footer{
+    font-family: "Bungee";
+    display:grid;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+    flex-direction: column;
+    grid-auto-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    text-align: left;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    height: 80%;
+    display: block;
+    object-fit: fill;
+}
+
+.container{
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.picture{
+    width: 40vw;
+    height: 90vh;
+}
+
+article > div:hover{
+    background: gray;
+}
+/* Desktop View */
+@media screen and (min-width: 1024px){
+
+    
+}
