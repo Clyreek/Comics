@@ -122,6 +122,9 @@ article > .container:hover{
 }
 /* Desktop View */
 @media screen and (min-width: 1024px){
+    body{
+        background-color: rgb(203, 203, 235);
+    }
     
     h1{
         text-align: center;
@@ -132,10 +135,18 @@ article > .container:hover{
         margin: 0 auto;
         width: 70%;
         padding-bottom: 10%;
+        background-color: white;
     }
 
     nav{
         font-size: 20px;
+        padding-top: 2%;
+    }
+
+    nav > p:hover{
+        background-color: white;
+        border: white;
+        color: rgba(19, 48, 212);
     }
 
     footer{
