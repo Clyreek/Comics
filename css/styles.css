@@ -51,15 +51,6 @@ nav{
     outline: solid white;
 }
 
-/* nav > p{
-    border-width: 2px 2px 0 0;
-    border-style: solid;
-} */
-
-main{
-    /* padding-bottom: 7vh; */
-}
-
 article{
     display: grid;
     justify-content: center;
@@ -93,33 +84,37 @@ img{
     max-height: 100%;
     max-width: 100%;
     width: 80%;
-    /* height: 80%; */
-    /* display: block; */
     object-fit: fill;
 }
 
 /* Classes */
 .container{
     justify-content: center;
-    /* width: 90%; */
-    /* height: 50%; */
     flex-direction: column;
     outline: black;
 }
 
-.picture{
-    /* width: 40vw;
-    height: 20vh; */
 
+.gallery{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
 }
 
 .comic-title:hover{
     text-decoration: underline;
 }
 
+.desc{
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+
 article > .container:hover{
     background: gray;
 }
+
 /* Desktop View */
 @media screen and (min-width: 1024px){
     body{
